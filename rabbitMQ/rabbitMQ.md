@@ -165,3 +165,7 @@ err = ch.QueueBind(
 
 在Exchange中设定type为topic后，同样和direct一样对信息进行筛选，但是使用的过滤方法是c1.c2.c3的形式。  
 *.*.orange,可以接收到所有标记中第三个属性为orange的信息,但是一定要有前两个属性，同时不能有第四个属性。lazy.#，则可以收到所有第一个属性为lazy的信息，不限后面还有多少个属性。  
+
+## Header exchange
+
+是比较基本的exchange，在发送消息的时候发送headers和body，其中headers中定义了filter信息，这一部分信息可以在queueBind的args参数中进行筛选。
