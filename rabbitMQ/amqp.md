@@ -67,7 +67,7 @@ noWait: Do not wait for server to confirm?
 ### ExchangeDeclare()
 Durable: Survive server restarts.  
 autoDelete: Delete when no binding.  
-internal: 内部交易??  
+internal: 内部交易  
 noWait: 
 ### ExchangeDeclarePassive()
 ### ExchangeDelete()
