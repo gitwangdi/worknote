@@ -25,8 +25,8 @@ Used to manage the nodes.
 ### node component  
 
 * kubelet:  
-  make sure containers are running in a pod.  
-* kube-proxy:  
+  get task from master, manage pods and containers, and report to master regularly  
+* kube-proxy: deal with service  
 * container runtime:  
   software that is responsible for runing containers including docker, rkt and so on.  
 
